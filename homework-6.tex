@@ -24,7 +24,8 @@ By submitting this \LaTeX{} document, I affirm that
 \section{Answers}
 
 \begin{enumerate}
-  \item
+  \item Decreasing frequency: \\
+    \includegraphics[scale=0.4]{q1}
   \item
   \begin{enumerate}
     \item D Flipflop: \\ \\
@@ -112,7 +113,20 @@ By submitting this \LaTeX{} document, I affirm that
       Circuit: \\ \\
       \includegraphics[scale=0.4]{jkff}
   \end{enumerate}
-  \item
+  \item One reason to not use latches in a 4-bit shifter is that it takes an entire cycle for a single shift. So, if I wanted to shift four bits four times, then I would have to wait at least four cycles for this action to complete, whereas, without latches, this could be done within a single cycle. For example, if you had four D Flipflops with four outputs (similar to the one below), and your goal was to set all bits to 1, then, it would take at least four cycles to reach your goal: \\ \\
+
+  \includegraphics[scale=0.5]{wiki} \\ Source: Wikipedia (Refer to link in Homework 6 description) \\ \\
+  \begin{tabular}{|l|llll|}
+    \hline
+    Cycle \# & \multicolumn{4}{|l|}{Q Values (q0, q1, q2, q3)} \\
+    \hline
+    1        & 0         & 0         & 0         & 0         \\
+    2        & 1         & 0         & 0         & 0         \\
+    3        & 1         & 1         & 0         & 0         \\
+    4        & 1         & 1         & 1         & 0         \\
+    5        & 1         & 1         & 1         & 1  \\
+    \hline
+  \end{tabular}
 \end{enumerate}
 
 
